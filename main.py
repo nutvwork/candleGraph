@@ -169,7 +169,7 @@ class DerivChartGenerator:
             
             # ส่ง POST request
             response = requests.post(
-                'https://thepapers.in/deriv/saveImage.php',
+                'https://lovetoshopmall.com/iqlab/saveImage.php',
                 json=payload,
                 headers={'Content-Type': 'application/json'},
                 timeout=30
