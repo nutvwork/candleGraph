@@ -14,8 +14,9 @@ import websockets
 # Test New Verion1
 class DerivChartGenerator:
     def __init__(self):
-        self.app_id = 667206  # Free app ID สำหรับ demo
+        
         self.app_id = 667216  # Free app ID สำหรับ demo
+        self.app_id = 667226  # Free app ID สำหรับ demo
         self.app_id = 66726  # Free app ID สำหรับ demo
         self.ws_url = f"wss://ws.binaryws.com/websockets/v3?app_id={self.app_id}"
         self.assets = ["R_10", "R_25", "R_50", "R_75", "R_100"]
