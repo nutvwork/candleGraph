@@ -169,20 +169,20 @@ class DerivChartGenerator:
             }
             
             # ส่ง POST request
-            response = requests.post(
-                'https://lovetoshopmall.com/iqlab/saveImage.php',
-                json=payload,
-                headers={'Content-Type': 'application/json'},
-                timeout=30
-            )
-            print(f"📝 {symbol}: API Response - {response.text}")
-            if response.status_code == 200:
-                print(f"✅ {symbol}: Successfully sent to API")
-                return True
-            else:
-                print(f"❌ {symbol}: API Error - Status Code: {response.status_code}")
-                print(f"Response: {response.text}")
-                return False
+            #response = requests.post(
+            #    'https://lovetoshopmall.com/iqlab/saveImage.php',
+            #    json=payload,
+            #    headers={'Content-Type': 'application/json'},
+            #    timeout=30
+            #)
+            #print(f"📝 {symbol}: API Response - {response.text}")
+            #if response.status_code == 200:
+            #    print(f"✅ {symbol}: Successfully sent to API")
+            #    return True
+            #else:
+            #    print(f"❌ {symbol}: API Error - Status Code: {response.status_code}")
+            #    print(f"Response: {response.text}")
+            #    return False
                 
         except requests.exceptions.RequestException as e:
             print(f"❌ {symbol}: Request Error - {e}")
